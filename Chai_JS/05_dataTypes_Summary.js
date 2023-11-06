@@ -34,3 +34,26 @@
         console.log("Hello World");
     }
 //
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+/*
+    Memory in JS.
+        1. Stack (Primitive DataTypes)
+        2. Heap (Non-Primitive DataTypes)
+*/
+// Example:. (Stack)
+    let myName = "Umar"
+    let myLastName=myName
+    myLastName="CWU"
+    console.log(myName);
+    console.log(myLastName);
+//
+// Example :. (Heap)
+    let userOne={
+        email:"u1@.com",
+        age:19
+    }
+    let userTwo=userOne;
+    userTwo.email="user2@.com"
+    console.log(userOne.email);
+    console.log(userTwo.email);
